@@ -1,0 +1,94 @@
+footer {
+  .logo {
+    background: url('../img/logo-seri.e-footer.svg');
+    width: 166px;
+    height: 61px;
+  }
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+
+    @media (max-width: 1024px) {
+      padding: 0 16px;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+    }
+
+    h2 {
+      color: var(--dark);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .links a {
+      display: block;
+      color: var(--dark);
+      text-decoration: none;
+      letter-spacing: 2.24px;
+      margin-bottom: 7px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .social a {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      transition: opacity .5s ease;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .development {
+    background-color: var(--dark);
+    color: var(--light);
+    
+    .container {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 1024px) {
+        padding: 0 16px;
+      }
+
+      @media (max-width: 520px) {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 16px 0;
+      }
+    }
+
+    div a {
+      &:first-child img {
+        width: 47px;
+        height: 27px;
+        display: inline-block;
+        margin-right: 40px;
+      }
+
+      &:last-child img {
+        width: 68px;
+        height: 25px;
+        display: inline-block;
+      }
+    }
+  }
+}

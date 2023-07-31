@@ -1,0 +1,126 @@
+
+.products {
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 56px 0 26px;
+  }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  li {
+    margin: 0 8px;
+    
+    @media (max-width: 520px) {
+      text-align: center;
+    }
+
+    > div {
+      position: relative;
+      overflow: hidden;
+    }
+
+    &.sold-out {
+      > div {
+        &::before {
+          content: "";
+          background-color: rgb(255 255 255 / 50%);
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+        }
+
+        &::after {
+          content: "";
+          background: url('../img/sold-out.png') no-repeat;
+          background-size: contain;
+          display: block;
+          width: 100%;
+          height: 130px;
+          position: absolute;
+          top: calc(50% - 65px);
+        }
+      }
+    }
+  }
+
+  h3 a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+    transition: opacity .5s ease;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .price {
+    color: #BBB;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .sale-price {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .slick-prev::before {
+    content: "";
+    background: url(../img/chevron-left.svg) no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    z-index: 200 !important;
+  }
+
+  .slick-next::before {
+    content: "";
+    background: url(../img/chevron-right.svg) no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .slick-next {
+    width: 24px;
+    height: 24px;
+    top: -25px;
+    right: 20%;
+    transition: right .5s ease;
+
+    &:hover {
+      right: calc(20% - 5px);
+    }
+  }
+
+  .slick-prev {
+    width: 24px;
+    height: 24px;
+    top: -25px;
+    left: 20%;
+    z-index: 2;
+    transition: left .5s ease;
+
+    &:hover {
+      left: calc(20% - 5px);
+    }
+  }
+}

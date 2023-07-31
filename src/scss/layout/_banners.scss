@@ -1,0 +1,37 @@
+.banner-slider {
+  overflow: hidden;
+}
+
+.banners {
+  display: flex;
+
+  > div {
+    flex: 1;
+    overflow: hidden;
+
+    a {
+      display: block;
+    }
+  }
+
+  img {
+    width: 100%;
+    transition: all .3s ease;
+    vertical-align: middle;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: .85;
+    }
+  }
+}
+
+.slick-slide img {
+  width: 100%;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    opacity: .9;
+  }
+}

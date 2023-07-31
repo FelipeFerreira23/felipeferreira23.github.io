@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+  --dark: #141414;
+  --light: #FFFFFF;
+  --gray: #909090;
+}
+
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+// 1024px, 768px e 520px;
+
+img {
+	width: 100%;
+}
+
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+.slick-dots {
+  bottom: 5px !important;
+
+  li {
+    button:before {
+      color: #eee !important;
+    }
+
+    &.slick-active button:before {
+      color: #fff !important;
+    }
+  }
+}

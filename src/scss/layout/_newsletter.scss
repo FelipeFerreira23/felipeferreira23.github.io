@@ -1,0 +1,70 @@
+.newsletter {
+  border-block: 1px solid var(--dark);
+  margin: 94px 0 50px;
+  
+  .container {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (max-width: 1024px) {
+      padding: 0 16px;
+    }
+
+    @media (max-width: 520px) {
+      flex-direction: column;
+      height: auto;
+      padding: 16px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    input {
+      height: 46px;
+      border: 1px solid var(--gray);
+      padding: 0 16px 0 28px;
+      margin-right: 16px;
+      color: var(--gray);
+      outline: none;
+      flex: 1;
+
+      &::placeholder {
+        color: var(--gray)
+      }
+    }
+
+    button {
+      display: flex;
+      padding: 8px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      border: none;
+      border-radius: 5px;
+      background: var(--dark);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: var(--light);
+      cursor: pointer;
+      transition: background .5s ease;
+
+      &:hover {
+        background: var(--gray);
+      }
+    }
+
+    > div:last-child {
+      display: flex;
+      flex: 1;
+
+    }
+  }
+}

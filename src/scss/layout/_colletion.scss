@@ -1,0 +1,27 @@
+.collection {
+  background: url('../img/bg-collection.jpg');
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: var(--dark);
+    font-weight: 700;
+    letter-spacing: 4.48px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px 0 24px;
+  }
+
+  div {
+    overflow: hidden;
+  }
+
+  img {
+    transition: all .3s ease;
+
+    &:hover {
+      transform: scale(1.01);
+      opacity: .85;
+    }
+  }
+}
